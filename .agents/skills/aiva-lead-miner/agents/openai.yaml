@@ -1,0 +1,13 @@
+interface:
+  display_name: AIVA汽车线索挖掘
+  short_description: 按圈选竞品抖音小红书账号抓评论，导出客户名称ID意向及时间，支持定期增量采集
+  default_prompt: 使用 $aiva-lead-miner 按我圈选的竞品账号采集汽车意向评论，导出客户名称、ID和评论时间，并设置定期运行。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

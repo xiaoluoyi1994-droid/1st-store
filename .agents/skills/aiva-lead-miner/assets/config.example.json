@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "timezone": "Asia/Shanghai",
+  "lookback_days": 30,
+  "data_dir": "data",
+  "sessions": { "douyin": "sessions/douyin.json", "xiaohongshu": "sessions/xiaohongshu.json" },
+  "limits": { "max_posts": 10, "max_comments_per_post": 200, "scroll_rounds": 8 },
+  "browser": { "headless": true, "delay_ms": 1600, "max_reply_clicks": 5 },
+  "intent_keywords": [],
+  "targets": []
+}

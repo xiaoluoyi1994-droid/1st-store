@@ -1,0 +1,7 @@
+{
+  "target_account_id": "DEMO-XHS-OWNER",
+  "comments": [
+    { "customer_name": "虚构客户丁", "customer_id": "DEMO-XHS-CUSTOMER-D", "customer_id_type": "user_id", "comment_text": "预算20万，家用选哪个？旧车能置换吗？", "comment_timestamp_raw": 1791532800000, "content_id": "DEMO-XHS-POST-1", "comment_id": "DEMO-XHS-COMMENT-1", "source_url": "https://example.invalid/demo-xhs-post" },
+    { "customer_name": "虚构客户戊", "customer_id": "DEMO-XHS-CUSTOMER-E", "customer_id_type": "user_id", "comment_text": "如果再便宜点就准备买了", "comment_timestamp_raw": null, "content_id": "DEMO-XHS-POST-1", "comment_id": "DEMO-XHS-COMMENT-2" }
+  ]
+}

@@ -1,0 +1,13 @@
+# 输出契约 v1
+
+核心字段：customer_name、customer_id、comment_text、comment_created_at。comment_created_at为平台原始时间转换后的UTC ISO8601；comment_timestamp_raw保留秒/毫秒等原始值。缺失或仅有相对时间时comment_created_at为null、quality_flags记录缺失；禁止用captured_at补齐。
+
+platform区分douyin/xiaohongshu。customer_id_type区分sec_uid/user_id/unknown；不是可见账号号段或实名。content_id、comment_id、parent_comment_id、target_id、target_account_id、source_url用于追溯和圈选。intent_tags是可解释标签；quality_flags表示待核验。
+
+record_key由平台、圈选任务ID、作品ID和评论ID生成；平台未给评论ID时，以账号ID/原文/原始时间组合计算散列，仅作本地去重，不能冒充平台ID。新客户不同评论保留为不同记录，第一期不是唯一客户计数。平台之间不做身份合并。每次任务job_id记录新增与本次累计，范围外的历史账号不会进入当前导出。
+
+CSV前四列固定按用户要求输出，文本增加CSV公式防护；JSONL保留原文。state.json保存评论级增量状态，可将未来保存端替换为SQLite/PostgreSQL。历史状态不是完整CRM，未自动删除平台已删除的评论。lookback_days限制导出窗口；如需清理历史数据，用户可在确认不再需要后删除整个data目录重新开始，不自动删除用户数据。
+
+退出码：0成功（不代表全量）；2部分失败；1全部失败或输入错误。report.status和coverage均必须读取。mode:fixture表示虚构演示，不能与live混用汇报。正常浏览器采集coverage始终为limited。
+
+0.1.1：无评论ID的回退键使用规范后的评论时间；旧版本无ID状态未自动迁移。累计导出同时按任务ID、平台和账号匹配，任务改绑不会展示旧账号记录。HTTP本地截断始终标记limited。

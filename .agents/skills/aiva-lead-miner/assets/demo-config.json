@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "lookback_days": 3650,
+  "data_dir": "demo-output",
+  "limits": { "max_posts": 10, "max_comments_per_post": 200, "scroll_rounds": 8 },
+  "targets": [
+    { "id": "demo-douyin", "label": "虚构抖音竞品", "platform": "douyin", "account_id": "DEMO-DY-OWNER", "source": "fixture", "selected": true, "fixture_file": "demo-douyin.json" },
+    { "id": "demo-xhs", "label": "虚构小红书竞品", "platform": "xiaohongshu", "account_id": "DEMO-XHS-OWNER", "source": "fixture", "selected": false, "fixture_file": "demo-xhs.json" }
+  ]
+}

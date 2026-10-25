@@ -1,0 +1,9 @@
+{
+  "target_account_id": "DEMO-DY-OWNER",
+  "comments": [
+    { "customer_name": "虚构客户甲", "customer_id": "DEMO-DY-CUSTOMER-A", "customer_id_type": "sec_uid", "comment_text": "重庆能预约试驾吗？这个月准备买，落地多少钱？", "comment_timestamp_raw": 1791532800, "content_id": "DEMO-DY-POST-1", "comment_id": "DEMO-DY-COMMENT-1", "source_url": "https://example.invalid/demo-douyin-post" },
+    { "customer_name": "虚构客户甲", "customer_id": "DEMO-DY-CUSTOMER-A", "customer_id_type": "sec_uid", "comment_text": "重庆能预约试驾吗？这个月准备买，落地多少钱？", "comment_timestamp_raw": 1791532800, "content_id": "DEMO-DY-POST-1", "comment_id": "DEMO-DY-COMMENT-1", "source_url": "https://example.invalid/demo-douyin-post" },
+    { "customer_name": "虚构客户乙", "customer_id": "DEMO-DY-CUSTOMER-B", "customer_id_type": "sec_uid", "comment_text": "真帅，支持一下！", "comment_timestamp_raw": 1791532800, "content_id": "DEMO-DY-POST-1", "comment_id": "DEMO-DY-COMMENT-2" },
+    { "customer_name": "虚构车主", "customer_id": "DEMO-DY-CUSTOMER-C", "customer_id_type": "sec_uid", "comment_text": "已经提车，之前优惠还挺大", "comment_timestamp_raw": 1791532800, "content_id": "DEMO-DY-POST-1", "comment_id": "DEMO-DY-COMMENT-3" }
+  ]
+}
